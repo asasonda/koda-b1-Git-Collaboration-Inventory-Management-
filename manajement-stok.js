@@ -1,12 +1,6 @@
-import { createInterface } from "node:readline";
 import { products } from "./data.js";
 
-const rl = createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-function stok() {
+export function stok(rl) {
   products.map((item) => {
     console.log(`${item.id} ${item.nama} - Stok: ${item.stok}`);
   });
@@ -31,9 +25,7 @@ function stok() {
             console.log(
               "============================================================",
             );
-            setTimeout(() => {
-              stok();
-            }, 2000);
+            rl.close();
           });
         } else if (Number(stok) === 2) {
           console.log(`${Number(info)}. ${products[Number(info) - 1].nama}`);
@@ -46,9 +38,7 @@ function stok() {
             console.log(
               `Stok dikurangi menjadi: ${products[Number(info) - 1].stok}`,
             );
-            setTimeout(() => {
-              stok();
-            }, 2000);
+            rl.close();
           });
         } else {
           console.log("Menu tidak tersedia");
@@ -56,9 +46,7 @@ function stok() {
       });
     } else {
       console.log("Produk tidak tersedia");
-      setTimeout(() => {
-        stok();
-      }, 2000);
+      rl.close();
     }
   });
 }
