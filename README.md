@@ -19,10 +19,10 @@
 ## Screenshot Commit History, Pull Request dan penyelesaian merge conflict
 
 ### Commit History
-
+![Home](screenshot/commit-history.png)
 
 ### Pull Request
-
+![Home](screenshot/pull-request.png)
 
 ### Merge conflict & resolve conflict
 #### Merge conflict
