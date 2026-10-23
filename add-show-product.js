@@ -26,7 +26,7 @@ export function showProducts(data) {
  * @returns {updateProducts} array baru berisi produk yang ditambahkan
  */
 
-export function addProduct(nama, harga = 0, stok = 0) {
+export async function addProduct(nama, harga = 0, stok = 0) {
   const newId = products.length > 0 ? products[products.length - 1].id + 1 : 0;
 
   const newProduct = {
@@ -41,6 +41,4 @@ export function addProduct(nama, harga = 0, stok = 0) {
   console.log(
     `Produk ${newProduct.nama} berhasil ditambahkan dg stok ${newProduct.stok}`,
   );
-
-  return updateProducts;
 }
