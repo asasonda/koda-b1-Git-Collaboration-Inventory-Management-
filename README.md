@@ -18,4 +18,19 @@
 
 ## Screenshot Commit History, Pull Request dan penyelesaian merge conflict
 
-comming soon
+### Commit History
+
+
+### Pull Request
+
+
+### Merge conflict & resolve conflict
+#### Merge conflict
+- merge conflict ini terjadi saat perubahan dapa fitur yang sama dan terjadi bentok pada perubahan sebelumnya yaitu pada 'Inputan Menu'
+
+![Home](screenshot/konflik.png)
+
+#### Resolve conflict
+- accept incoming change (mengambil perubahan dari commit sebelumnya bukan 'current' atau mengambil perubahan saat ini)
+  
+![Home](screenshot/resolve-conflict.png)
