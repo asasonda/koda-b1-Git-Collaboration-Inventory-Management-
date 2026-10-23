@@ -1,4 +1,5 @@
 import { createInterface } from 'node:readline';
+import { search } from './search.js';
 
 console.log('-------------------------------------');
 console.log('     Selamat datang di indomeret     ');
@@ -19,18 +20,20 @@ rl.question('Pilih: ', (input) => {
     case 1:
       // tampilkan barang dan tambahkan barang
       // masukin kedalam ini
+      rl.close();
       break;
     case 2:
       // pencarian barang
-      // masukin ke dalam ini
+      search(rl);
       break;
     case 3:
       // manajement stok
       // masukin disini
+      rl.close();
       break;
     default:
       console.log('Tidak ada pilihan');
+      rl.close();
       break;
   }
-  rl.close();
 });
